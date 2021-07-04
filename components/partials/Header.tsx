@@ -74,7 +74,7 @@ function Header() {
                     {/* Site navigation */}
                     <nav className="flex flex-grow">
                         <ul className="flex flex-grow justify-end flex-wrap items-center">
-                            {!user &&
+                            {user && user.id === 0 &&
                             <>
                                 <li>
                                     <Link href="/signin">
@@ -98,7 +98,7 @@ function Header() {
                             </>
                             }
 
-                            {user &&
+                            {user && user.id !== 0 &&
                             <>
                                 <li>
                                     <Link href="/profile">
