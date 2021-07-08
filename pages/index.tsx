@@ -1,22 +1,14 @@
+import React, {FC} from 'react';
 import Layout from "../components/layout";
-import React from "react";
-import HeroHome from "../components/partials/HeroHome";
-import FeaturesHome from '../components/partials/Features';
-import FeaturesBlocks from "../components/partials/FeaturesBlocks";
-import Testimonials from "../components/partials/Testimonials";
-import Newsletter from "../components/partials/Newsletter";
+import Banner from "../components/partials/Banner";
+import Packages from "../components/partials/Packages";
 
-export default function Home() {
+const Home: FC = () => {
 
-    // @ts-ignore
-    return (
-        <Layout>
-            {/*  Page sections */}
-            <HeroHome/>
-            <FeaturesHome/>
-            <FeaturesBlocks/>
-            <Testimonials/>
-            <Newsletter/>
-        </Layout>
-    )
-}
+    return <Layout>
+        <Banner />
+        <Packages />
+    </Layout>
+};
+
+export default Home;

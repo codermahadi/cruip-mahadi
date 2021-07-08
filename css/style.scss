@@ -5,23 +5,9 @@
 //@import "tailwindcss/utilities";
 
 // Additional styles
-@import 'additional-styles/utility-patterns';
-@import 'additional-styles/range-slider';
-@import 'additional-styles/toggle-switch';
-@import 'additional-styles/theme';
-
-
-// Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive
-@responsive {
-  .rtl {
-    direction: rtl;
-  }
-}
-
-// See Alpine.js: https://github.com/alpinejs/alpine#x-cloak
-[x-cloak] {
-  display: none;
-}
+@import "additional-styles/global";
+@import "additional-styles/header";
+@import "additional-styles/banner";
 
 // AOS styles
 $aos-distance: 10px;
